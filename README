@@ -1,1 +1,22 @@
-There is not much on here yet.
+cleaned data 23_09.ipynb is the code for cleaning the raw data set.
+What it does:
+1. It deletes complete empty rows
+2. It keeps rows where processtype is not ANNULERING (so deletes Annulering)
+3. It keeps reaction type: aangeboden and geen mogelijk
+4. It deletes rows without reaction
+5. It keeps rows where processtype is not handmatig
+6. It keeps rows where processtype is not NSR
+7. It keeps rows where processtype is not JAARDIENST
+8. It keeps only rows with most recent ordernummer
+
+The cleaned dataset is then saved into a new csv file called "cleaned_dataset.csv"
+
+test_2.ipynb is the code for generating a numeric dataset for machine learning.
+What it does:
+1. It filters the data by process type, leave only the NIEUW requests
+2. It extracts the hours from the earliest departure time column, and remove the rows where this information is missing
+3. The hours of a day of the earliest departure time column is then encoded in a cyclical way, so that 0:00 is close to 23:00
+4. The reaction by ProRail is mapped into binary numbers. AANGEBODEN: 1, GEEN_AANBIEDING_MOGELIJK: 0
+5. The stabling service request information (binary) and time tolerance are copied from the cleaned dataset
+6. The days of week of the requests are also encoded in a cyclical way, so that Monday is close to Sunday
+7. The origin and destinations are encoded with OneHotEncode
