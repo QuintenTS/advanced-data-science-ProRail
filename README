@@ -20,3 +20,5 @@ What it does:
 5. The stabling service request information (binary) and time tolerance are copied from the cleaned dataset
 6. The days of week of the requests are also encoded in a cyclical way, so that Monday is close to Sunday
 7. The origin and destinations are encoded with OneHotEncode
+
+The numeric dataset is saved into a new csv file called "numeric_dataset.csv"
