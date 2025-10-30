@@ -1,10 +1,10 @@
 All the code is put unto two main notebooks, each with comments and markdowns. Because of privacy, the CSV's are not saved into this public Github repository:
-1. "main_grouped.ipynb"
-This contains the code for cleaning the raw data set and saves it into three output files ("dataset_1.csv", "dataset_2.csv", "dataset_3.csv"). 
-It also contains the code for generating a numeric dataset for machine learning and saves it into one output file ("numeric_dataset_grouped.csv"). .
-Finally, it contains the logistic regression part which uses the previous parts.
+1. "main_grouped.ipynb", it contains code for: 
+- Cleaning the raw data set, saves it into three output files ("dataset_1.csv", "dataset_2.csv", "dataset_3.csv"). 
+- Generating a numeric dataset for machine learning, saves it into one output file ("numeric_dataset_grouped.csv"). .
+- Logistic regression part, uses the previous parts.
 2. "main_onehot.ipynb"
-This is the same as "main_grouped.ipynb", but uses the one-hot encoding for the logistic regression. It saves the numeric dataset into one output file ("numeric_dataset_onehot.csv").  
+- Same as "main_grouped.ipynb", but uses the one-hot encoding, saves the numeric dataset into one output file ("numeric_dataset_onehot.csv").  
 
 -----
 *Other files*
