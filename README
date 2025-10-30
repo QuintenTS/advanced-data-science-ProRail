@@ -1,17 +1,26 @@
-cleaned data 23_09.ipynb is the code for cleaning the raw data set.
-What it does:
+All the code is put unto two main notebooks, each with comments and markdowns. Because of privacy, the CSV's are not saved into this public Github repository:
+1. "main_grouped.ipynb"
+This contains the code for cleaning the raw data set and saves it into three output files ("dataset_1.csv", "dataset_2.csv", "dataset_3.csv"). 
+It also contains the code for generating a numeric dataset for machine learning and saves it into one output file ("numeric_dataset_grouped.csv"). .
+Finally, it contains the logistic regression part which uses the previous parts.
+2. "main_onehot.ipynb"
+This is the same as "main_grouped.ipynb", but uses the one-hot encoding for the logistic regression. It saves the numeric dataset into one output file ("numeric_dataset_onehot.csv").  
+
+-----
+*Other files*
+
+"Final version cleaned data.ipynb" is the part for cleaning the raw dataset, which is integrated into "main_grouped.ipynb".
+What it does in short:
 1. It deletes complete empty rows
 2. It keeps rows where processtype is not ANNULERING (so deletes Annulering)
-3. It keeps reaction type: aangeboden and geen mogelijk
+3. It keeps reaction type: AANGEBODEN and GEEN_AANBIEDING_MOGELIJK
 4. It deletes rows without reaction
 5. It keeps rows where processtype is not handmatig
 6. It keeps rows where processtype is not NSR
 7. It keeps rows where processtype is not JAARDIENST
 8. It keeps only rows with most recent ordernummer
 
-The cleaned dataset is then saved into a new csv file called "cleaned_dataset.csv"
-
-test_2.ipynb is the code for generating a numeric dataset for machine learning.
+"test_2.ipynb" is the part for generating a numeric dataset, which is integrated into "main_grouped.ipynb".
 What it does:
 1. It filters the data by process type, leave only the NIEUW requests
 2. It extracts the hours from the earliest departure time column, and remove the rows where this information is missing
@@ -21,4 +30,13 @@ What it does:
 6. The days of week of the requests are also encoded in a cyclical way, so that Monday is close to Sunday
 7. The origin and destinations are encoded with OneHotEncode
 
-The numeric dataset is saved into a new csv file called "numeric_dataset.csv"
+"Midtermppt (1).pptx" contains the PowerPoint presentation that was used to present the progress of the project to the teaching team and company supervisor. 
+
+Several files evaluate different options, though they are not integrated into the final deliverable to maintain scope. They are intermediate versions:
+- "Logistic regression 9_10.ipynb"
+- "Logistic regression.ipynb"
+- "Test difference response and request.ipynb"
+- "Visualisations first dataset, raw and cleaned.ipynb"
+- "Visualisations second dataset, cleaned and raw.ipynb"
+- "cleaned data 21-10-2.ipynb"
+- "cleaned data 23_09.ipynb" 
