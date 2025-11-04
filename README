@@ -6,6 +6,8 @@ All the code is put unto two main notebooks, each with comments and markdowns. B
 2. "main_onehot.ipynb"
 - Same as "main_grouped.ipynb", but uses the one-hot encoding, saves the numeric dataset into one output file ("numeric_dataset_onehot.csv").  
 
+The folder "ProrailApp" contains the data to run the application "Train Path Request Approval Predictor". The readme.txt in the folder explains how the app can be activated. 
+
 -----
 *Other files*
 
@@ -34,9 +36,8 @@ What it does:
 
 Several files evaluate different options, though they are not integrated into the final deliverable to maintain scope. They are intermediate versions:
 - "Logistic regression 9_10.ipynb"
-- "Logistic regression.ipynb"
+- "Logistic regression (test phase).ipynb"
 - "Test difference response and request.ipynb"
 - "Visualisations first dataset, raw and cleaned.ipynb"
 - "Visualisations second dataset, cleaned and raw.ipynb"
 - "cleaned data 21-10-2.ipynb"
-- "cleaned data 23_09.ipynb" 
