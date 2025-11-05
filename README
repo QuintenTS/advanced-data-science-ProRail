@@ -6,7 +6,7 @@ All the code is put unto two main notebooks, each with comments and markdowns. B
 2. "main_onehot.ipynb"
 - Same as "main_grouped.ipynb", but uses the one-hot encoding, saves the numeric dataset into one output file ("numeric_dataset_onehot.csv").  
 
-The folder "ProrailApp" contains the data to run the application "Train Path Request Approval Predictor". The readme.txt in the folder explains how the app can be activated. 
+The folder "ProrailApp" contains the data to run the application "Train Path Request Approval Predictor". The readme.txt in the folder explains how the app can be activated. "Video Project.mp4" is a demo of how it works.  
 
 -----
 *Other files*
